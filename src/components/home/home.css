@@ -1,0 +1,144 @@
+/* https://coolors.co/e7717d-c2cad0-c2b9b0-7e685a-afd275 */
+
+.topfullbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topbar {
+  position: absolute;
+  width: 100%;
+  height: 4.5rem;
+  background-color: var(--secondary-dark);
+  border-bottom-left-radius: 30px;
+}
+
+.topbarcircle {
+  justify-content: flex-end;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--secondary-dark);
+  border-radius: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.topinnercircle {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background-color: var(--main-dark);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerinnercircle {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+}
+
+.innerinnercircle img {
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 50%;
+}
+
+.topfullbar h1 {
+  color: var(--main-dark);
+  padding: 1.3rem;
+}
+
+.dlswitch{
+  top: 6rem;
+  left: 1rem;
+  background-color: var(--secondary-dark);
+  width: 3rem;
+  height:3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.dlswitch ion-icon{
+  font-size: 1rem;
+  padding-top: 1rem;
+  cursor: pointer;
+  color: var(--main-dark);
+}
+
+.nav{
+  position: fixed;
+  top: 10rem;
+  background-color: var(--secondary-dark);
+  left: 1rem;
+  width: 3rem;
+  height: 18rem;
+  border-radius: 30px;
+  display: grid;
+  justify-content: center;
+}
+
+.nav ion-icon{
+  padding-top: 1rem;
+  cursor: pointer;
+  color: var(--main-dark);
+}
+
+.nav ul{
+  display: grid;
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+  list-style: none;
+  justify-content: center;
+  line-height: 3rem;
+}
+
+.list{
+  display: flex;
+}
+
+.list a{
+  position: relative;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--main-dark);
+  left: 1.3rem;
+  text-decoration: none;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+/* .list a:hover{
+  transform: translateX(0.5rem);
+  background-color: var(--prime-dark);
+  color: var(--main2-dark);
+} */
+
+.icon{
+  justify-self: center;
+}
+
+.title{
+  padding-left: 2rem;
+  color: green;
+  opacity: 0%;
+}
+
+.list:hover .title,
+.active .title{
+  opacity: 100%;
+}
+
