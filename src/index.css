@@ -6,6 +6,13 @@
   --main2-dark: #564787;
 }
 
+[data-theme='dark']{
+  --prime-dark: #FFFFFF;
+  --secondary-dark: #CCCCCC;
+  --main-dark: #42B63E;
+  --text: #000000;
+  --main2-dark: #3498DB;
+}
 
 * {
   margin: 0;

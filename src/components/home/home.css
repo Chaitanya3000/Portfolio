@@ -1,5 +1,10 @@
 /* https://coolors.co/e7717d-c2cad0-c2b9b0-7e685a-afd275 */
 
+.wholePage{
+  background-color: var(--prime-dark);
+  min-height: 100%;
+}
+
 .topfullbar {
   width: 100%;
   height: auto;
@@ -83,7 +88,7 @@
   background-color: var(--secondary-dark);
   left: 1rem;
   width: 3rem;
-  height: 18rem;
+  height: 17rem;
   border-radius: 30px;
   display: grid;
   justify-content: center;
@@ -142,3 +147,88 @@
   opacity: 100%;
 }
 
+.hero{
+  padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.animation{
+  height: 25rem;
+  width: 25rem;
+  padding-top: 3rem;
+}
+
+.greeting{
+  display: flex;
+  color: var(--text);
+  padding-left: 5rem;
+}
+
+.accent{
+  padding-left: 1rem;
+  color: var(--main-dark);
+}
+
+.info{
+  display: grid;
+  justify-content: center;
+  width: 35rem;
+  color: var(--text);
+}
+
+.info p{
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.cards{
+  padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.card{
+  display: grid;
+  height: 15rem;
+  width: 10rem;
+  border-radius: 20px;
+  border: 2px solid var(--main-dark);
+  color: var(--text);
+  place-items: center;
+  line-height: 1rem;
+  margin: 1rem;
+}
+
+.card ion-icon{
+  height: 5rem;
+  width: 5rem;
+  color: var(--text);
+}
+
+.card div{
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid var(--main-dark);
+}
+
+.card div:hover{
+  background-color: var(--main-dark);
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.carousel-container {
+  width: 35rem;
+}

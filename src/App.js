@@ -1,9 +1,9 @@
 import Home from "./components/home/home.js";
 
-function App(){
-  return(
+function App() {
+  return (
     <>
-    <Home/>
+      <Home />
     </>
   );
 }
