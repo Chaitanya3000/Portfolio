@@ -26,7 +26,7 @@ function Home() {
         {/* This is for the top bar with the circle image. */}
         <div className="topfullbar" id='topfullbar'>
           <div className="topbar">
-            <h1>G.Chaitanya Nanda Mohan</h1>
+            <h1>G.Chaitanya</h1>
           </div>
           <div className="topbarcircle">
             <div className="topinnercircle">
