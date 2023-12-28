@@ -234,9 +234,9 @@
 }
 
 .car{
-  height: 50rem;
-  width: 50rem;
-  margin-left: 17rem;
+  height: 50%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 10rem;
 }
 
@@ -247,6 +247,7 @@ footer {
   place-items: center;
   height: 10rem;
   padding-top: 2rem;
+  margin-top: 10rem;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
 }
