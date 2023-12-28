@@ -1,59 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import "./home.css";
 import useLocalStorage from "use-local-storage";
 import profile from "../../images/WhatsApp Image 2023-11-22 at 20.19.02_e8fd1184.jpg";
 import Lottie from "lottie-react";
 import hero_animation from "../../images/Animation - 1703512399903.json";
-import "react-responsive-carousel/lib/styles/carousel.css";  // Fix the import for the carousel CSS
-import { Carousel } from "react-responsive-carousel";
+import css from "../../images/css certificate_page-0001.png";
+import jsb from "../../images/javascript_basic certificate_page-0001.png";
+import jsi from "../../images/javascript_intermediate certificate_page-0001.png";
+import { CCarousel } from '@coreui/react';
+import { CImage } from '@coreui/react';
+import { CCarouselItem } from '@coreui/react';
+import '@coreui/coreui/dist/css/coreui.min.css';
 
 function Home() {
   const [theme, setTheme] = useLocalStorage("theme", "dark");
-  const [currentIndex, setCurrentIndex] = useState(0);  // Define 'currentIndex' using 'useState'
-  
+
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
 
-  const handleChange = (index) => {
-    setCurrentIndex(index);
-  };
-
-  const imageData = [
-    {
-      label: "Image 1",
-      alt: "image1",
-      url: "https://lh5.googleusercontent.com/xo6zDzj4Mq8JTuh31DRdzWPkmeekU1ykdvy7gmdGNkBnVzHoULgCA_MpL1ybOV2GKEkbvmswUl0iQW0lvnNQe3gqOFi_-bbt3MBzOAla29FvVN753jPZS87Bn7HyXoQ-dwA-ioYg",
-    },
-    {
-      label: "Image 2",
-      alt: "image2",
-      url: "https://cdn.thomasnet.com/insights-images/eaf2ea91-c0ca-488d-ab63-af480b6f78cb/750px.png",
-    },
-    {
-      label: "Image 3",
-      alt: "image3",
-      url: "https://moneyinc.com/wp-content/uploads/2018/11/Willow-750x500.jpg",
-    },
-    {
-      label: "Image 4",
-      alt: "image4",
-      url: "https://japan.stripes.com/sites/default/files/styles/community_site_carousel_750x500/public/article-images/main_13.jpg?itok=_GELFbpY",
-    },
-  ];
-
-  const renderSlides = imageData.map((image) => (
-    <div key={image.alt}>
-      <img src={image.url} alt={image.alt} />
-      <p className="legend">{image.label}</p>
-    </div>
-  ));
   return (
     <>
       <div className="wholePage" data-theme={theme}>
         {/* This is for the top bar with the circle image. */}
-        <div className="topfullbar">
+        <div className="topfullbar" id='topfullbar'>
           <div className="topbar">
             <h1>G.Chaitanya Nanda Mohan</h1>
           </div>
@@ -82,7 +53,7 @@ function Home() {
               <div className="nav_items">
                 <ul>
                   <li className="list" activeClassName="active">
-                    <a href="/">
+                    <a href="#topfullbar">
                       <div className="icon">
                         <ion-icon name="home-outline"></ion-icon>
                       </div>
@@ -90,28 +61,28 @@ function Home() {
                     <span className="title">home</span>
                   </li>
                   <li className="list" activeClassName="active">
-                    <a href="#">
+                    <a href="#skill">
                       <div className="icon">
-                        <ion-icon name="home-outline"></ion-icon>
+                        <ion-icon name="compass-outline"></ion-icon>
                       </div>
                     </a>
-                    <span className="title">home</span>
+                    <span className="title">Skills</span>
                   </li>
                   <li className="list">
-                    <a href="#">
+                    <a href="#car">
                       <div className="icon">
-                        <ion-icon name="home-outline"></ion-icon>
+                        <ion-icon name="receipt-outline"></ion-icon>
                       </div>
                     </a>
-                    <span className="title">home</span>
+                    <span className="title">Certificate</span>
                   </li>
                   <li className="list">
-                    <a href="#">
+                    <a href="#foot">
                       <div className="icon">
-                        <ion-icon name="home-outline"></ion-icon>
+                        <ion-icon name="person-outline"></ion-icon>
                       </div>
                     </a>
-                    <span className="title">home</span>
+                    <span className="title">Contacts</span>
                   </li>
                 </ul>
               </div>
@@ -119,7 +90,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="hero">
+        <div className="hero" id="hero">
           <div className="info">
             <div className="greeting">
               <h1>Welcome to my </h1>
@@ -143,51 +114,62 @@ function Home() {
           </div>
         </div>
 
-        <div className="cards">
-          <div className="card">
-            <ion-icon name="logo-react"></ion-icon>
-            <h4>React</h4>
-            <div>Learn More</div>
-          </div>
-          <div className="card">
-            <ion-icon name="logo-react"></ion-icon>
-            <h4>React</h4>
-            <div>Learn More</div>
-          </div>
-          <div className="card">
-            <ion-icon name="logo-react"></ion-icon>
-            <h4>React</h4>
-            <div>Learn More</div>
-          </div>
-          <div className="card">
-            <ion-icon name="logo-react"></ion-icon>
-            <h4>React</h4>
-            <div>Learn More</div>
-          </div>
-          <div className="card">
-            <ion-icon name="logo-react"></ion-icon>
-            <h4>React</h4>
-            <div>Learn More</div>
-          </div>
-          <div className="card">
-            <ion-icon name="logo-react"></ion-icon>
-            <h4>React</h4>
-            <div>Learn More</div>
+        <div className="skil" id="skill">
+          <h1>My Skills</h1>
+
+          <div className="cards">
+            <div className="card">
+              <ion-icon name="logo-react"></ion-icon>
+              <h4>React</h4>
+              {/* <div>Learn More</div> */}
+            </div>
+            <div className="card">
+              <ion-icon name="logo-html5"></ion-icon>
+              <h4>HTML</h4>
+              {/* <div>Learn More</div> */}
+            </div>
+            <div className="card">
+              <ion-icon name="logo-css3"></ion-icon>
+              <h4>CSS</h4>
+              {/* <div>Learn More</div> */}
+            </div>
+            <div className="card">
+              <ion-icon name="logo-javascript"></ion-icon>
+              <h4>JavaScript</h4>
+              {/* <div>Learn More</div> */}
+            </div>
           </div>
         </div>
 
-        <div className="App">
-          <Carousel
-            showArrows={true}
-            autoPlay={true}
-            infiniteLoop={true}
-            selectedItem={imageData[currentIndex]}
-            onChange={handleChange}
-            className="carousel-container"
-          >
-            {renderSlides}
-          </Carousel>
+        <div className="car" id="car">
+          <CCarousel controls indicators dark>
+            <CCarouselItem>
+              <CImage className="d-block w-100" src={css} alt="slide 1" />
+            </CCarouselItem>
+            <CCarouselItem>
+              <CImage className="d-block w-100" src={jsb} alt="slide 2" />
+            </CCarouselItem>
+            <CCarouselItem>
+              <CImage
+                className="d-block w-100"
+                src={jsi}
+                alt="slide 3"
+              />
+            </CCarouselItem>
+          </CCarousel>
         </div>
+
+        <footer id="foot">
+          <p>Lets contact</p>
+          <div class="icons">
+            <a href="https://github.com/Chaitanya3000">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://linkedin.com/in/chaitanya3000">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+        </footer>
       </div>
     </>
   );

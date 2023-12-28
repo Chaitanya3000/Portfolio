@@ -7,9 +7,9 @@
 }
 
 [data-theme='dark']{
-  --prime-dark: #FFFFFF;
-  --secondary-dark: #CCCCCC;
-  --main-dark: #42B63E;
+  --prime-dark: hsl(207, 38%, 75%);
+  --secondary-dark:	#FFFFFF;
+  --main-dark: #0F9015;
   --text: #000000;
   --main2-dark: #3498DB;
 }

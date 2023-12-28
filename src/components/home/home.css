@@ -1,6 +1,6 @@
 /* https://coolors.co/e7717d-c2cad0-c2b9b0-7e685a-afd275 */
 
-.wholePage{
+.wholePage {
   background-color: var(--prime-dark);
   min-height: 100%;
 }
@@ -63,26 +63,26 @@
   padding: 1.3rem;
 }
 
-.dlswitch{
+.dlswitch {
   top: 6rem;
   left: 1rem;
   background-color: var(--secondary-dark);
   width: 3rem;
-  height:3rem;
+  height: 3rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   position: fixed;
 }
 
-.dlswitch ion-icon{
+.dlswitch ion-icon {
   font-size: 1rem;
   padding-top: 1rem;
   cursor: pointer;
   color: var(--main-dark);
 }
 
-.nav{
+.nav {
   position: fixed;
   top: 10rem;
   background-color: var(--secondary-dark);
@@ -94,13 +94,13 @@
   justify-content: center;
 }
 
-.nav ion-icon{
+.nav ion-icon {
   padding-top: 1rem;
   cursor: pointer;
   color: var(--main-dark);
 }
 
-.nav ul{
+.nav ul {
   display: grid;
   position: absolute;
   width: 100%;
@@ -110,11 +110,11 @@
   line-height: 3rem;
 }
 
-.list{
+.list {
   display: flex;
 }
 
-.list a{
+.list a {
   position: relative;
   display: flex;
   height: 2.5rem;
@@ -132,22 +132,23 @@
   color: var(--main2-dark);
 } */
 
-.icon{
+.icon {
   justify-self: center;
 }
 
-.title{
-  padding-left: 2rem;
-  color: green;
+.title {
+  font-size: 1rem;
+  color: var(--main-dark);
   opacity: 0%;
+  transform: translateX(2rem);
 }
 
 .list:hover .title,
-.active .title{
+.active .title {
   opacity: 100%;
 }
 
-.hero{
+.hero {
   padding-left: 10%;
   display: flex;
   flex-wrap: wrap;
@@ -156,44 +157,54 @@
   margin-top: 2rem;
 }
 
-.animation{
+.animation {
   height: 25rem;
   width: 25rem;
   padding-top: 3rem;
 }
 
-.greeting{
+.greeting {
   display: flex;
   color: var(--text);
   padding-left: 5rem;
 }
 
-.accent{
+.accent {
   padding-left: 1rem;
   color: var(--main-dark);
 }
 
-.info{
+.info {
   display: grid;
   justify-content: center;
   width: 35rem;
   color: var(--text);
 }
 
-.info p{
+.info p {
   padding-top: 1rem;
   text-align: center;
 }
 
-.cards{
-  padding-left: 10%;
+.skil {
+  margin-top: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.skil h1 {
+  color: var(--text);
+}
+
+.cards {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 2rem;
 }
 
-.card{
+.card {
   display: grid;
   height: 15rem;
   width: 10rem;
@@ -205,30 +216,43 @@
   margin: 1rem;
 }
 
-.card ion-icon{
+.card ion-icon {
   height: 5rem;
   width: 5rem;
   color: var(--text);
 }
 
-.card div{
+.card div {
   border-radius: 5px;
   padding: 5px;
   border: 2px solid var(--main-dark);
 }
 
-.card div:hover{
+.card div:hover {
   background-color: var(--main-dark);
   cursor: pointer;
 }
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3rem;
+.car{
+  height: 50rem;
+  width: 50rem;
+  margin-left: 17rem;
+  margin-top: 10rem;
 }
 
-.carousel-container {
-  width: 35rem;
+footer {
+  background-color: var(--secondary-dark);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  height: 10rem;
+  padding-top: 2rem;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.icons > * {
+  font-size: xx-large;
+  margin: 10px;
+  color: var(--text);
 }
